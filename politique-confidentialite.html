@@ -1,246 +1,253 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Politique de confidentialité — ZePouce</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
-      color: #333;
-      background: #fff;
-      padding: 24px 16px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 32px;
-      padding-bottom: 24px;
-      border-bottom: 2px solid #2563eb;
-    }
-    header h1 {
-      font-size: 2em;
-      color: #2563eb;
-      letter-spacing: -0.5px;
-    }
-    header p.tagline {
-      color: #666;
-      font-style: italic;
-      margin-top: 4px;
-    }
-    header h2 {
-      font-size: 1.3em;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-top: 16px;
-      color: #111;
-    }
-    header .version {
-      color: #888;
-      font-size: 0.9em;
-      margin-top: 6px;
-    }
-    .intro {
-      background: #eff6ff;
-      border-left: 4px solid #2563eb;
-      padding: 16px 20px;
-      border-radius: 0 8px 8px 0;
-      margin-bottom: 32px;
-    }
-    section {
-      margin-bottom: 32px;
-    }
-    h3 {
-      font-size: 1.15em;
-      font-weight: 700;
-      color: #2563eb;
-      margin-bottom: 12px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid #dbeafe;
-    }
-    h4 {
-      font-weight: 600;
-      margin: 16px 0 8px;
-      color: #111;
-    }
-    ul {
-      padding-left: 20px;
-      margin: 8px 0;
-    }
-    ul li {
-      margin-bottom: 6px;
-    }
-    .important {
-      background: #fef9c3;
-      border-left: 4px solid #eab308;
-      padding: 12px 16px;
-      border-radius: 0 6px 6px 0;
-      margin: 12px 0;
-      font-weight: 500;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 12px 0;
-      font-size: 0.9em;
-    }
-    th {
-      background: #2563eb;
-      color: #fff;
-      padding: 10px 12px;
-      text-align: left;
-    }
-    td {
-      padding: 9px 12px;
-      border-bottom: 1px solid #e5e7eb;
-    }
-    tr:nth-child(even) td {
-      background: #f9fafb;
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-    a:hover { text-decoration: underline; }
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #e5e7eb;
-      color: #888;
-      font-size: 0.85em;
-      font-style: italic;
-    }
-    @media (max-width: 600px) {
-      table { font-size: 0.8em; }
-      th, td { padding: 7px 8px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZePouce — Politique de Confidentialité</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Caveat:wght@600&display=swap');
+
+  :root {
+    --orange: #FF6B35;
+    --sage: #4CAF7D;
+    --amber: #FFB347;
+    --charcoal: #2D2A26;
+    --cream: #FFF9F4;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--cream);
+    color: var(--charcoal);
+    margin: 0;
+    padding: 0;
+    line-height: 1.65;
+  }
+
+  header {
+    background-color: var(--charcoal);
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  header .logo {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    color: var(--cream);
+  }
+
+  header .logo span { color: var(--orange); }
+
+  header .tagline {
+    font-family: 'Caveat', cursive;
+    color: var(--amber);
+    font-size: 20px;
+    margin-top: 4px;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  h1 {
+    font-weight: 800;
+    font-size: 28px;
+    color: var(--charcoal);
+    border-bottom: 3px solid var(--sage);
+    padding-bottom: 12px;
+    margin-bottom: 8px;
+  }
+
+  .updated {
+    font-size: 14px;
+    color: #8a8478;
+    margin-bottom: 32px;
+  }
+
+  h2 {
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--orange);
+    margin-top: 40px;
+    margin-bottom: 12px;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--charcoal);
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  p, li { font-size: 15.5px; }
+  ul { padding-left: 22px; }
+  strong { color: var(--charcoal); }
+
+  a { color: var(--sage); text-decoration: none; font-weight: 700; }
+  a:hover { text-decoration: underline; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    font-size: 14.5px;
+  }
+
+  th {
+    background-color: var(--sage);
+    color: white;
+    text-align: left;
+    padding: 10px 12px;
+    font-weight: 700;
+  }
+
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee0d3;
+    vertical-align: top;
+  }
+
+  tr:nth-child(even) td { background-color: #fffaf2; }
+
+  .badge {
+    display: inline-block;
+    background-color: var(--orange);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+
+  .contact-box {
+    background-color: white;
+    border: 2px solid var(--amber);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 12px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 24px;
+    color: #8a8478;
+    font-size: 13px;
+  }
+</style>
 </head>
 <body>
 
 <header>
-  <h1>ZePouce</h1>
-  <p class="tagline">Le partage sans blabla</p>
-  <h2>Politique de confidentialité</h2>
-  <p class="version">Version 1.0 — 15 avril 2026</p>
+  <div class="logo">Ze<span>Pouce</span></div>
+  <div class="tagline">Le partage sans blabla</div>
 </header>
 
-<div class="intro">
-  La présente politique de confidentialité décrit comment l'application ZePouce collecte, utilise et protège vos données personnelles, conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés.<br><br>
-  En utilisant ZePouce, vous acceptez les pratiques décrites dans ce document.
-</div>
+<main>
+  <h1>Politique de Confidentialité</h1>
+  <p class="updated">Dernière mise à jour : 5 septembre 2026</p>
 
-<section>
-  <h3>1. Responsable du traitement</h3>
-  <p>ZePouce est développé et exploité à titre personnel, en tant que projet indépendant. À ce jour, aucune structure juridique formelle n'a été créée. Le responsable du traitement est le développeur de l'application.</p>
-  <p style="margin-top:10px;">Pour toute question relative à vos données, vous pouvez nous contacter à l'adresse : <a href="mailto:contact@zepouce.fr">contact@zepouce.fr</a></p>
-</section>
+  <p>La présente Politique de Confidentialité décrit comment l'application <strong>ZePouce</strong> (« l'Application »), éditée par Florent Mariotto, entrepreneur individuel domicilié à Bram (Aude), France, collecte, utilise et protège les données personnelles de ses utilisateurs, conformément au Règlement Général sur la Protection des Données (RGPD).</p>
 
-<section>
-  <h3>2. Données collectées</h3>
+  <h2>1. Responsable du traitement</h2>
+  <p><strong>Florent Mariotto</strong><br>
+  Entrepreneur individuel<br>
+  Bram, Aude, France<br>
+  E-mail : <a href="mailto:contact@zepouce.fr">contact@zepouce.fr</a></p>
 
-  <h4>2.1 Données d'inscription</h4>
-  <ul>
-    <li>Nom et prénom</li>
-    <li>Adresse email</li>
-    <li>Photo de profil (optionnelle)</li>
-  </ul>
-
-  <h4>2.2 Données de localisation</h4>
-  <ul>
-    <li>Position GPS en temps réel (uniquement lors d'un trajet actif)</li>
-    <li>Itinéraire : point de départ et point d'arrivée</li>
-  </ul>
-  <div class="important">⚠️ Les données GPS ne sont actives que pendant la durée d'un trajet. Elles ne sont pas stockées après la fin du trajet.</div>
-
-  <h4>2.3 Données de communication</h4>
-  <ul>
-    <li>Messages échangés via la messagerie interne de l'application</li>
-    <li>Avis et notations laissés par les utilisateurs</li>
-  </ul>
-</section>
-
-<section>
-  <h3>3. Finalités du traitement</h3>
+  <h2>2. Données collectées</h2>
   <table>
-    <thead>
-      <tr><th>Donnée</th><th>Finalité</th><th>Base légale</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Nom, email</td><td>Création et gestion du compte</td><td>Exécution du contrat</td></tr>
-      <tr><td>Position GPS</td><td>Mise en relation trajet en cours</td><td>Consentement explicite</td></tr>
-      <tr><td>Itinéraire</td><td>Affichage et correspondance de trajets</td><td>Exécution du contrat</td></tr>
-      <tr><td>Messages</td><td>Communication entre utilisateurs</td><td>Exécution du contrat</td></tr>
-      <tr><td>Avis / notes</td><td>Fiabilité et sécurité des membres</td><td>Intérêt légitime</td></tr>
-    </tbody>
+    <tr><th>Donnée</th><th>Finalité</th><th>Base légale</th></tr>
+    <tr><td>E-mail, mot de passe (ou identifiant Google/Apple)</td><td>Création et gestion du compte</td><td>Exécution du contrat</td></tr>
+    <tr><td>Nom / prénom, photo de profil</td><td>Identification au sein de l'Application (spots, chat, avis)</td><td>Exécution du contrat</td></tr>
+    <tr><td>Géolocalisation</td><td>Affichage de la carte, publication de spots, calcul de trajets</td><td>Consentement</td></tr>
+    <tr><td>Messages échangés</td><td>Fonctionnement de la messagerie entre utilisateurs</td><td>Exécution du contrat</td></tr>
+    <tr><td>Statut de présence en ligne</td><td>Indiquer aux contacts si l'utilisateur est disponible</td><td>Intérêt légitime</td></tr>
+    <tr><td>Trajets proposés/recherchés (départ, arrivée, date, fréquence, places)</td><td>Mise en relation covoiturage</td><td>Exécution du contrat</td></tr>
+    <tr><td>Avis et notes sur les spots</td><td>Information de la communauté</td><td>Exécution du contrat</td></tr>
+    <tr><td>Token de notification push</td><td>Envoi de notifications (nouveaux messages, trajets)</td><td>Consentement</td></tr>
+    <tr><td>Informations partenaire (nom de structure, logo, description, contact)<span class="badge">nouveau</span></td><td>Affichage des spots et structures partenaires</td><td>Exécution du contrat</td></tr>
+    <tr><td>Données techniques (type d'appareil, journaux d'erreurs)</td><td>Maintenance et sécurité de l'Application</td><td>Intérêt légitime</td></tr>
   </table>
-</section>
 
-<section>
-  <h3>4. Durée de conservation</h3>
+  <h2>3. Fonctionnalités liées au traitement des données</h2>
+  <h3>3.1 Carte et spots</h3>
+  <p>La cartographie est assurée par <strong>Mapbox</strong>, qui traite les données de localisation nécessaires à l'affichage de la carte et des spots. Les spots publiés par des comptes partenaires peuvent afficher publiquement le nom et le logo de la structure, selon le niveau de partenariat attribué.</p>
+  <h3>3.2 Messagerie et présence en ligne</h3>
+  <p>Les messages échangés entre utilisateurs sont stockés afin de permettre la consultation de l'historique de conversation. Un indicateur de présence en ligne peut être visible par les participants d'une même conversation.</p>
+  <h3>3.3 Notifications push</h3>
+  <p>Sous réserve du consentement de l'utilisateur (accordé via les permissions de l'appareil), l'Application envoie des notifications relatives à l'activité de son compte (nouveau message, mise à jour de trajet). L'utilisateur peut désactiver ces notifications à tout moment dans les réglages de son appareil.</p>
+  <h3>3.4 Avis et signalements</h3>
+  <p>Les avis (note + commentaire) laissés sur un spot sont associés au nom d'affichage de l'utilisateur et visibles publiquement dans l'Application. Les signalements de contenu sont traités par l'éditeur à des fins de modération.</p>
+
+  <h2>4. Destinataires des données</h2>
+  <p>Les données sont hébergées et traitées via les sous-traitants suivants :</p>
   <ul>
-    <li>Données de compte : conservées tant que le compte est actif</li>
-    <li>Données GPS : supprimées immédiatement après la fin du trajet</li>
-    <li>Messages : conservés 12 mois après la dernière interaction</li>
-    <li>Avis : conservés tant que le compte existe</li>
-    <li>Après suppression du compte : toutes les données sont effacées sous 30 jours</li>
+    <li><strong>Google Firebase</strong> (Firestore, Authentication, Storage, Cloud Functions, notifications push) — hébergement et infrastructure applicative ;</li>
+    <li><strong>Mapbox</strong> — services cartographiques ;</li>
+    <li><strong>Infomaniak</strong> — hébergement de la messagerie électronique de l'éditeur.</li>
   </ul>
-</section>
+  <p>Ces prestataires n'utilisent les données que dans le cadre strict des services fournis à ZePouce et n'en font aucun usage commercial propre. Aucune donnée n'est vendue à des tiers.</p>
 
-<section>
-  <h3>5. Partage des données</h3>
-  <p>Vos données ne sont pas vendues à des tiers. Elles peuvent être transmises uniquement à :</p>
-  <ul style="margin-top:10px;">
-    <li><strong>Firebase (Google)</strong> — hébergement et base de données (serveurs en Europe)</li>
-    <li><strong>Les autres utilisateurs</strong> — uniquement les informations de profil public (prénom, photo, avis)</li>
+  <h3>4.1 Transferts hors Union Européenne</h3>
+  <p>Certains sous-traitants (notamment Google Firebase) peuvent traiter des données en dehors de l'Union Européenne. Ces transferts sont encadrés par les garanties prévues par le RGPD, notamment l'adhésion de Google LLC au cadre <em>EU-US Data Privacy Framework</em>.</p>
+
+  <h2>5. Durée de conservation</h2>
+  <ul>
+    <li>Données de compte : conservées tant que le compte est actif, supprimées dans un délai raisonnable après suppression du compte ;</li>
+    <li>Messages : conservés tant que la conversation n'est pas supprimée par l'un des participants ;</li>
+    <li>Trajets publiés : purgés automatiquement après expiration (durée de vie limitée gérée techniquement) ;</li>
+    <li>Avis : conservés tant que le spot associé existe, sauf demande de suppression ;</li>
+    <li>Données partenaires : conservées tant que le partenariat est actif.</li>
   </ul>
-  <p style="margin-top:10px;">Vos messages ne sont visibles que par les deux participants concernés.</p>
-</section>
 
-<section>
-  <h3>6. Vos droits (RGPD)</h3>
-  <p>Conformément au RGPD, vous disposez des droits suivants :</p>
-  <ul style="margin-top:10px;">
-    <li><strong>Droit d'accès</strong> : obtenir une copie de vos données</li>
-    <li><strong>Droit de rectification</strong> : corriger vos données inexactes</li>
-    <li><strong>Droit à l'effacement</strong> : supprimer votre compte et toutes vos données</li>
-    <li><strong>Droit à la portabilité</strong> : recevoir vos données dans un format lisible</li>
-    <li><strong>Droit d'opposition</strong> : vous opposer à certains traitements</li>
-    <li><strong>Droit de retrait du consentement</strong> : notamment pour la géolocalisation</li>
+  <h2>6. Sécurité des données</h2>
+  <p>L'Application met en œuvre des mesures techniques et organisationnelles pour protéger les données des utilisateurs, notamment des règles de sécurité Firestore garantissant que :</p>
+  <ul>
+    <li>seuls les propriétaires d'un document peuvent le modifier ;</li>
+    <li>l'accès aux conversations est restreint aux seuls participants ;</li>
+    <li>les champs sensibles (statut partenaire, tier, rôle) ne peuvent être modifiés que depuis la console d'administration, jamais depuis l'application cliente.</li>
   </ul>
-  <p style="margin-top:12px;">Pour exercer ces droits, contactez-nous à : <a href="mailto:contact@zepouce.fr">contact@zepouce.fr</a></p>
-  <p style="margin-top:6px;">En cas de litige, vous pouvez saisir la CNIL : <a href="https://www.cnil.fr" target="_blank">www.cnil.fr</a></p>
-</section>
 
-<section>
-  <h3>7. Sécurité des données</h3>
-  <p>Nous mettons en œuvre les mesures suivantes pour protéger vos données :</p>
-  <ul style="margin-top:10px;">
-    <li>Accès à la base de données restreint par des règles strictes (Firebase Security Rules)</li>
-    <li>Authentification sécurisée via Firebase Authentication</li>
-    <li>Communications chiffrées via HTTPS</li>
-    <li>Accès aux données limité au strict nécessaire</li>
+  <h2>7. Droits des utilisateurs</h2>
+  <p>Conformément au RGPD, chaque utilisateur dispose des droits suivants sur ses données personnelles :</p>
+  <ul>
+    <li>droit d'accès ;</li>
+    <li>droit de rectification ;</li>
+    <li>droit à l'effacement (« droit à l'oubli ») ;</li>
+    <li>droit à la limitation du traitement ;</li>
+    <li>droit à la portabilité des données ;</li>
+    <li>droit d'opposition ;</li>
+    <li>droit de retirer son consentement à tout moment (géolocalisation, notifications).</li>
   </ul>
-</section>
+  <p>Ces droits peuvent être exercés en contactant l'éditeur à l'adresse indiquée à l'article 1. Une réponse sera apportée dans un délai maximal d'un mois. L'utilisateur dispose également du droit d'introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">www.cnil.fr</a>).</p>
 
-<section>
-  <h3>8. Mineurs</h3>
-  <p>ZePouce est destiné aux personnes âgées de 18 ans et plus. Nous ne collectons pas sciemment de données relatives à des mineurs. Si vous pensez qu'un mineur nous a communiqué des données, contactez-nous immédiatement.</p>
-</section>
+  <h2>8. Cookies et traceurs</h2>
+  <p>L'Application mobile ne dépose pas de cookies au sens du web. Certains identifiants techniques (token de notification, identifiant d'appareil) sont utilisés uniquement pour le bon fonctionnement du service.</p>
 
-<section>
-  <h3>9. Modifications de cette politique</h3>
-  <p>Cette politique peut être mise à jour. Toute modification significative sera notifiée aux utilisateurs via l'application. La date de dernière mise à jour est indiquée en haut de ce document.</p>
-</section>
+  <h2>9. Mineurs</h2>
+  <p>L'Application n'est pas destinée aux personnes de moins de 16 ans. L'éditeur ne collecte pas sciemment de données concernant des mineurs de moins de 16 ans.</p>
+
+  <h2>10. Modification de la politique</h2>
+  <p>La présente Politique de Confidentialité peut être modifiée à tout moment, notamment pour refléter l'évolution des fonctionnalités de l'Application ou des exigences légales. Toute modification substantielle sera notifiée aux utilisateurs via l'Application ou par e-mail.</p>
+
+  <h2>11. Contact</h2>
+  <div class="contact-box">
+    <p style="margin:0;"><strong>Responsable du traitement :</strong> Florent Mariotto<br>
+    <strong>E-mail :</strong> <a href="mailto:contact@zepouce.fr">contact@zepouce.fr</a><br>
+    <strong>Localisation :</strong> Bram, Aude, France</p>
+  </div>
+</main>
 
 <footer>
-  ZePouce — Le partage sans blabla — Politique de confidentialité v1.0
+  ZePouce — Le partage sans blabla · <a href="https://zepouce.fr">zepouce.fr</a>
 </footer>
 
 </body>
